@@ -15,14 +15,26 @@
   "commands": [
     {
       "name": "index",
-      "title": "Professional rephraser",
+      "title": "Rephrase - Professional",
       "subtitle": "Make you sound more professional",
       "description": "Sending messages to colleagues? Chatting on LinkedIn? Don't worry!",
-      "mode": "view"
+      "mode": "view",
+      "preferences": [
+        {
+          "name": "API_KEY",
+          "description": "Your OpenAI API KEY, can be found here: https://platform.openai.com/account/api-keys",
+          "type": "password",
+          "required": true,
+          "title": "API KEY",
+          "placeholder": "Enter your API KEY"
+        }
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.48.9"
+    "@raycast/api": "^1.48.9",
+    "@raycast/utils": "^1.5.2",
+    "openai": "^3.2.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.5",
