@@ -8,7 +8,7 @@ export default async function ({
   apiKey: string;
   message: string;
   systemMessage: string;
-}): Promise<{ message: null | string; error: any | null }> {
+}): Promise<{ message: null | string; error: unknown | null }> {
   console.log("message", message);
 
   const configuration = new Configuration({
